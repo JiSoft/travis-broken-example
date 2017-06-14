@@ -4,3 +4,13 @@ php:
   - 5.4
   - hhvm
 script: phpunit Test.php
+notifications:
+  webhooks:
+    urls:
+      http://b83331a4.ngrok.io/travis
+    on_success: change # default: always
+    on_failure: always # default: always
+    on_start: change   # default: never
+    on_cancel: always # default: always
+    on_error: always # default: always
+    
