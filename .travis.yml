@@ -3,4 +3,5 @@ php:
   - 5.5
   - 5.4
   - hhvm
-script: phpunit Test.php
+script: 
+  - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; phpunit Test.php fi;
