@@ -4,4 +4,4 @@ php:
   - 5.4
   - hhvm
 script: 
-  - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; phpunit Test.php fi;
+  - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; phpunit Test.php; fi;
